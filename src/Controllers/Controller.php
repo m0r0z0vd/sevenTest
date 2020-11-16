@@ -2,6 +2,8 @@
 
 namespace SevenTest\Controllers;
 
+use SevenTest\Services\Viewer;
+
 abstract class Controller
 {
     abstract public function getAction(): void;
@@ -10,6 +12,6 @@ abstract class Controller
 
     public function notFoundAction(): void
     {
-
+        Viewer::render('404');
     }
 }
