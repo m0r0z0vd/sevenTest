@@ -1,1 +1,1 @@
-# sevenTest
+# Test project for SEVEN
