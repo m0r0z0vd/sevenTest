@@ -2,15 +2,17 @@
 
 namespace SevenTest\Controllers;
 
+use SevenTest\Services\Viewer;
+
 class User extends Controller
 {
     public function getAction(): void
     {
-        // TODO: Implement getAction() method.
+        Viewer::render('users');
     }
 
     public function postAction(): void
     {
-        // TODO: Implement postAction() method.
+        echo 'Hello from post';
     }
 }
